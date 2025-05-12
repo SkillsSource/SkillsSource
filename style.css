@@ -7,6 +7,7 @@ body {
 	font-family: Arial, sans-serif;
 	background-color: #FAEACA;
 	margin: 0;
+	
 }
 
 #wrapper {
@@ -24,7 +25,8 @@ nav {
 	
 	background-color: #dab429;
 	color: #fff;
-	padding: 10px 0;
+	padding: 10px ;
+	padding-bottom: 0px;
 	font-size: 1.2em;
 	font-weight: bold;
 	
@@ -60,9 +62,12 @@ nav a:hover {
 	color: #F7E531;
 }
 
+
+
 /* Style for the dropdown menu */
 nav ul li {
     position: relative; /* To position the dropdown */
+	
 }
 
 nav ul .dropdown {
@@ -93,6 +98,7 @@ nav ul .dropdown li a {
 nav ul .dropdown li a:hover {
     background-color: #333;
     color: #F7E531;
+	text-decoration: underline;
 }
 
 /* Show dropdown on hover */
@@ -126,13 +132,51 @@ footer {
 }
 
 
-/* Mobile phone view (desktop and tablet view is the same) */
+  
+  
+  .progress-container {
+	width: 100%;
+	height: 8px;
+	background: #987d1c;
+	border-radius: 5px;
+	
+  }
+  
+ 
+  .progress-bar {
+	height: 8px;
+	background: #F7E531;
+	width: 0%;
+	border-radius: 5px;
+  }
 
-@media screen and (max-width: 430px) {
+
+
+
+
+.featured-card {
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+
+.featured-subcard {
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 450px) {
 	
 	nav {
 		font-size: 1em;
-		border-radius: 0px 0px 20px 20px;
+		border-radius: 0px 0px 24.5px 24.5px;
 	}
 
 	nav ul {
@@ -151,6 +195,22 @@ footer {
 
 	footer {
 		font-size: 0.9em;
+	}
+
+	.progress-container {
+		border-radius: 0px 0px 20px 20px;
+	}
+
+	.progress-bar {
+		border-radius: 0px 0px 20px 20px;
+	}
+
+	.featured-card {
+		background-color: #fff;
+		border-radius: 15px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		padding: 20px;
+		margin-bottom: 20px;
 	}
 	
 }

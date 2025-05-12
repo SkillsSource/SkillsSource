@@ -5,28 +5,48 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
 		<meta name=viewport content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="SkillsSource Favicon.png">
+
+
+
+
+
+		<script>window.onscroll = function() {myFunction()};
+
+			function myFunction() {
+			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			  var scrolled = (winScroll / height) * 100;
+			  document.getElementById("myBar").style.width = scrolled + "%";
+			}
+			</script>
 	</head>
 <body>
 	<nav>
 		<a href="index.html" style="all: unset;"><p>SkillsSource</p></a>
 		<ul>
 			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html" style="text-decoration: underline;">About</a></li>
 			<li>
+
 				<li>
 					<a href="#">Skills ⌵</a>
 					<ul class="dropdown">
-						<li><a href="skill1.html">IT Fundamentals</a></li>
-						<li><a href="skill2.html">Cyber Security Fundamentals</a></li>
-						<li><a href="skill3.html">Skill 3</a></li>
-						<li><a href="skill4.html">Skill 4</a></li>
+						<li><a href="IT_Fund.html">IT Fundamentals</a></li>
+						<li><a href="CyberS_Fund.html">Cyber Security Fundamentals</a></li>
+						<li><a href="WebDev_Fund.html">Web Development Fundamentals</a></li>
+						<li><a href="UX_Fund.html">User Experience</a></li>
 					</ul>
 				</li>
 			
-			<li><a href="about.html" style="text-decoration: underline;">About</a></li>
+			
 			<li><a href="contact.html">Contact</a></li>
 	
 		</ul>
 	
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		  </div>
 	</nav>
 
 <div id="wrapper">

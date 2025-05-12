@@ -5,36 +5,66 @@
         <meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
 		<meta name=viewport content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="SkillsSource Favicon.png">
+
+
+
+
+
+		<script>window.onscroll = function() {myFunction()};
+
+			function myFunction() {
+			  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			  var scrolled = (winScroll / height) * 100;
+			  document.getElementById("myBar").style.width = scrolled + "%";
+			}
+			</script>
     </head>
 <body>
    
 <nav>
+
+	
+	
 	<a href="index.html" style="all: unset;"><p>SkillsSource</p></a>
 	<ul>
 		<li><a href="index.html" style="text-decoration: underline;">Home</a></li>
+		<li><a href="about.html">About</a></li>
 		<li>
 			<li>
 				<a href="#">Skills ⌵</a>
 				<ul class="dropdown">
-					<li><a href="skill1.html">IT Fundamentals</a></li>
-					<li><a href="skill2.html">Cyber Security Fundamentals</a></li>
-					<li><a href="skill3.html">Skill 3</a></li>
-					<li><a href="skill4.html">Skill 4</a></li>
+					<li><a href="IT_Fund.html">IT Fundamentals</a></li>
+					<li><a href="CyberS_Fund.html">Cyber Security Fundamentals</a></li>
+					<li><a href="WebDev_Fund.html">Web Development Fundamentals</a></li>
+					<li><a href="UX_Fund.html">User Experience</a></li>
 				</ul>
 			</li>
 		
-		<li><a href="about.html">About</a></li>
+		
 		<li><a href="contact.html">Contact</a></li>
+
 
 	</ul>
 	
-
-
 	
+	
+
+
+	<div class="progress-container">
+		<div class="progress-bar" id="myBar"></div>
+	  </div>
 </nav>
 
 
-<!-- I want to make a thing that shows how you got to said page, like a file path kinda, that stays under the nav bar-->
+<!-- 
+
+I want to make a thing that shows how you got to said page, like a file path kinda, that stays under the nav bar
+ 
+edit: nvm but ill keep this comment here for now
+
+-->
 
 
 
@@ -44,7 +74,9 @@
 
 	<br>
 
-<main>
+
+
+	
 	<h1>
 		Featured Skills of the Week
 
@@ -62,7 +94,27 @@
 
 
 
+	<main>
+		<div class="featured-card">
+			<img src="images/skill1.jpg" alt="Skill 1">
+			<h2>IT Fundamentals</h2>
+			<p>Learn the basics of IT, including hardware, software, and networking.</p>
+			<a href="skill1.html">Learn More</a>
+		</div>
 
+		<div class="featured-card">
+			<img src="images/skill2.jpg" alt="Skill 2">
+			<h2>Cyber Security Fundamentals</h2>
+			<p>Understand the principles of cybersecurity and how to protect systems.</p>
+			<a href="skill2.html">Learn More</a>
+		</div>
+
+		<div class="featured-subcard">
+			<img src="images/skill3.jpg" alt="Skill 3">
+			<h2>Web Development Fundamentals</h2>
+			<p>Get started with web development, including HTML, CSS, and JavaScript.</p>
+			<a href="skill3.html">Learn More</a>
+		</div>
 
 
 
