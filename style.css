@@ -32,6 +32,8 @@ nav {
 	
 	text-align: center;
 	box-shadow: 0 14px 12px rgba(0, 0, 0, 0.1);
+
+
 	
 	/*following the screen */
 	position: fixed;
@@ -39,6 +41,15 @@ nav {
 	left: 0;
 	right: 0;
 	z-index: 1000;
+}
+
+nav h6 {
+	padding: 3px;
+	margin: 0;
+	background-color: #F77731;
+	border-radius: 20px 20px 20px 20px;
+
+
 }
 
 nav ul {
@@ -233,4 +244,13 @@ hr {
 	border: none;
 	border-radius: 5px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+	width: 100%;
+	height: 500px;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
 }
